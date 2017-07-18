@@ -1,0 +1,12 @@
+{
+    "type": "python3.6",
+    "description": "Aws Instance Scheduler",
+    "hooks":{
+        "build": "pip install -r requirements.txt -t python_modules"
+    },
+    "environment": {
+        "WEBHOOK_URL": "<<INCOMING_WEBHOOK_URL을 여기에 붙여넣기 하세요>>",
+        "STOP_ALERT_BEFORE_TIME_MINUTE": "10",
+        "OUTGOING_WEBHOOK_TOKEN": "<<OUTGOING_WEBHOOK_TOKEN을 여기에 붙여넣기 하세요>>"
+    }
+}

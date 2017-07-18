@@ -1,0 +1,9 @@
+{
+    "name": "production",
+    "description": "",
+    "memory": 512,
+    "timeout": 300,
+    "role": "<<Lambda Role>>",
+    "nameTemplate": "{{.Project.Name}}-{{.Function.Name}}",
+    "environment": {}
+}
