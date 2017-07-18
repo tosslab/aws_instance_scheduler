@@ -130,7 +130,7 @@ Cloudwatch Event를 통해 배포된 Instance Scheduler Lambda 함수를 주기�
 
 ![Cloudwatch Event](assets/cloud_watch_cron.png)
 
-5분마다 작동되게 설정하였으며 상황에 따라 설정값을 바꾸셔되 됩니다.
+5분마다 작동되게 설정하였으며 상황에 따라 설정값을 바꾸셔도 됩니다.
 
 ## Schedule Alarm
 
@@ -207,7 +207,7 @@ Jandi 메신저의 Outgoing Webhook Connect를 생성 후 위 Api Gateway에서 
 
 ### Bot Command
 
-Schedule Bot은 다음과 같은 명령어를 수행한다.
+Schedule Bot은 다음과 같은 명령어를 수행합니다.
 
 ```
 /서버 help : 도움말
