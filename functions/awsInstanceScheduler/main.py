@@ -1268,12 +1268,14 @@ class SchedulerBot:
         if not ScheduleUtil.is_valid_date(exception_date):
             raise BotInvalidError('날짜가 잘못되었지 말입니다', self)
 
-        if not ScheduleUtil.is_valid_time(exception_time):
-            raise BotInvalidError('시간이 잘못되었지 말입니다', self)
-
         exception_date = datetime.strptime(exception_date, '%Y-%m-%d').date()
 
-        h = int(exception_time.split(':')[0])
+        h = 0
+
+        if exception_time != "None":
+            if not ScheduleUtil.is_valid_time(exception_time):
+                raise BotInvalidError('시간이 잘못되었지 말입니다', self)
+            h = int(exception_time.split(':')[0])
 
         self.schedule.set_schedule_exception(exception_date, exception_type, exception_time)
 
